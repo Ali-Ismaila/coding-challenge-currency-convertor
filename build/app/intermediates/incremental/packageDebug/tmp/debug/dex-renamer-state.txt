@@ -1,0 +1,4 @@
+#Sun Oct 09 09:13:08 MSK 2022
+base.0=E\:\\currency_application_challenge\\currency_application\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

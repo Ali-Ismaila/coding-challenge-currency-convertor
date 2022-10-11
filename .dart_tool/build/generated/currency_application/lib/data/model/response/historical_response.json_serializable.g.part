@@ -1,0 +1,16 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+HistoricalResponse _$HistoricalResponseFromJson(Map<String, dynamic> json) =>
+    HistoricalResponse()
+      ..status = json['status'] as bool?
+      ..error = json['error'] as String?
+      ..data = json['data'] as Map<String, dynamic>?;
+
+Map<String, dynamic> _$HistoricalResponseToJson(HistoricalResponse instance) =>
+    <String, dynamic>{
+      'status': instance.status,
+      'error': instance.error,
+      'data': instance.data,
+    };

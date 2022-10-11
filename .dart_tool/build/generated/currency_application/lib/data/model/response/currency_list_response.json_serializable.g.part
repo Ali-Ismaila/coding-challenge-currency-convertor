@@ -1,0 +1,29 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+CurrencyListResponse _$CurrencyListResponseFromJson(
+        Map<String, dynamic> json) =>
+    CurrencyListResponse()..data = json['results'] as Map<String, dynamic>?;
+
+Map<String, dynamic> _$CurrencyListResponseToJson(
+        CurrencyListResponse instance) =>
+    <String, dynamic>{
+      'results': instance.data,
+    };
+
+Currency _$CurrencyFromJson(Map<String, dynamic> json) => Currency(
+      json['currencyId'] as String?,
+      json['currencyName'] as String?,
+      json['currencySymbol'] as String?,
+      json['id'] as String?,
+      json['name'] as String?,
+    );
+
+Map<String, dynamic> _$CurrencyToJson(Currency instance) => <String, dynamic>{
+      'currencyId': instance.currencyId,
+      'currencyName': instance.currencyName,
+      'currencySymbol': instance.currencySymbol,
+      'id': instance.id,
+      'name': instance.name,
+    };
